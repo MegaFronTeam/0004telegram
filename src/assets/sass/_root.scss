@@ -2,7 +2,10 @@
 :root {
 	--animate-delay: 1.2s;
 	--bs-body-font-size: #{$em-base};
+	--bs-body-bg: var(--tg-theme-bg-color, #fff);
+	--bs-body-color: var(--tg-theme-text-color) ;
 
+	--btn-text: var(--tg-theme-button-text-color);
 	@include media-breakpoint-up(md) {
 
 		--sPT: #{rem(80)};
@@ -20,7 +23,7 @@
 		--swiperBorderColorDef: var(--bs-primary);
 		--swiperColorDef: var(--bs-primary);
 		--swiperBgDef: #ffffff;
-	
+
 		--swiperBorderColorDefHover: var(--bs-primary);
 		--swiperColorDefHover: var(--bs-primary);
 		--swiperBgDefHover: #ffffff;

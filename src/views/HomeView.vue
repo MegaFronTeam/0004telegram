@@ -1,9 +1,5 @@
 <template>
   <div class="main-wrapper">
-    <div class="header">
-      <div class="header__title">Прага | Доставка ❤️</div>
-      <div class="header__text">бот</div>
-    </div>
     <div class="sCatalog">
       <div class="container">
         <catalog-nav :info="info"/>

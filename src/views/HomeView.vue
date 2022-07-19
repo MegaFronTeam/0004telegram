@@ -3,7 +3,7 @@
     <div class="sCatalog">
       <div class="container">
         <catalog-nav :info="info"/>
-        <div class="row mb-4 g-4"  v-for="cat in info" :key="cat.guid" :id="cat.guid">
+        <div class="prod-row row mb-4 g-4" v-for="cat in info" :key="cat.guid" :id="'cat-'+cat.guid"  v-intersection >
           <div class="col-12 row__title strong" v-html="cat.name"></div>
           <div class="col-6" v-for="item in cat.products" :key="item">
             <prod-item :item="item"></prod-item>
@@ -40,11 +40,14 @@ export default {
       try {
         const responce = await axios.post('https://dev.chatfood.ru/api/get-products')
         // console.log(responce);
-        console.log(responce.data.result)
+        // console.log(responce.data.result)
         this.info = responce.data.result
       } catch (e) {
         alert('Ошибка ')
       }
+    },
+    activeNav () {
+      console.log(1)
     }
   },
   mounted () {

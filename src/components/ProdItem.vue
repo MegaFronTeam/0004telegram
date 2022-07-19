@@ -8,7 +8,6 @@
       </div>
       <div class="prod-item__title"  v-html="item.name"></div>
       <div class="prod-item__caption"   v-html="description"></div>
-      <div class="prod-item__caption"   >{{description}}</div>
       <div class="prod-item__footer">
         <button class="prod-item__btn prod-item__btn--minus btn " @click="removeProd"></button>
         <button class="prod-item__btn prod-item__btn--plus btn " :class="[quantity > 0 ? '' :  'w-100']" @click="addProd">

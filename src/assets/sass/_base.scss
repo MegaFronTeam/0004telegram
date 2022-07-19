@@ -95,7 +95,7 @@ body {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	padding-top: rem(44);
+	padding-top: rem(74);
 	padding-bottom: 50px;
 }
 
@@ -640,7 +640,7 @@ iframe {
 }
 
 .sCatalog-nav{
-	margin-bottom: 20px;
+	//margin-bottom: 20px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -670,6 +670,7 @@ iframe {
 		display: inline-block;
 		&.active,
 		&:hover{
+			background-color: $primary;
 			//--bg: var(--tg-theme-button-color);
 			//--color: var(--tg-theme-button-text-color);
 		}

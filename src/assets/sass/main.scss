@@ -8,7 +8,8 @@ $output-bourbon-deprecation-warnings: false;
 @import "bourbon/app/assets/stylesheets/bourbon";
 // @import "../../node_modules/rfs/scss";
 // @import "./node_modules/@fancyapps/ui/src/Fancybox/Fancybox.scss";
- @import "./node_modules/swiper/swiper";
+// @import "./node_modules/swiper/swiper";
+ @import "./node_modules/@egjs/vue3-flicking/dist/flicking";
 
 @import "mixin";
 @import "fonts";

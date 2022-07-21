@@ -2,6 +2,7 @@
   <div class="sCatalog-nav" >
     <div class="container">
       <swiper
+        :watch-overflow="1"
         :slides-per-view="0">
         <swiper-slide  v-for="cat in info" :key="cat.guid">
           <a class="sCatalog-nav__link" @click="scrollTo" :href="'#cat-' + cat.guid">{{cat.name}}</a>
